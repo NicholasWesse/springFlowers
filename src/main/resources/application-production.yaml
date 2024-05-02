@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://dpg-cophnkcf7o1s73dvrerg-a.oregon-postgres.render.com:5432/flowers_yppe?user=flowers_yppe_user&password=cWPnFfCf93W5wBBaIpdYcOvOGAnsnPk6
+    username: flowers_yppe_user
+    password: cWPnFfCf93W5wBBaIpdYcOvOGAnsnPk6
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+  sql:
+    init:
+      mode: always
