@@ -1,0 +1,10 @@
+services:
+  coffee-database:
+    image: postgres:alpine
+    container_name: flower-database
+    ports:
+      - "6000:5432"
+    environment:
+      POSTGRES_USERNAME: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: flower
